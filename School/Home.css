@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&display=swap');
+.text-gray{
+    color: gray;
+}
+.op:hover{
+    opacity: 5;
+}
+.und:hover{
+    text-decoration: underline;
+}
+.undd:hover{
+    text-decoration: underline;
+    color: gray;
+}
+.obj{
+    object-fit: cover;
+}
+.mas{
+    margin-left: 4%;
+}
+.box-marquee{
+    height: 40px;
+    width: 40px;
+}
+.tran{
+    transition: all 0.3s;
+}
+.fk{
+    font-family: "Hanuman", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.slide_show{
+    height: 400px;
+}
+.menu-con{
+    width: 65%;
+    padding: 5%;
+    gap: 5rem;
+}
+.menu-box{
+    /* border: 1px solid rgb(97, 97, 97); */
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+}
+.pic-box{
+    overflow: hidden;
+    border-radius: 10px;
+    height: 200px;
+    width:300px;
+}
+.tranf:hover{
+    transform: scale(1.05);
+}
+.menu-con .menu-box{
+    transition: all 0.5s;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.54),rgba(0, 0, 0, 0.54),rgba(0, 0, 0, 0.54)),url('logo.png');
+}
+.menu-con .menu-box:hover{
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.34),rgba(0, 0, 0, 0.34),rgba(0, 0, 0, 0.34)),url('logo.png');
+}
+.logo-footer{
+    height: 60px;
+    width: 60px;
+}
+
+
+@media screen and (max-width:500px){
+    .menu-con{
+        width: 90%;
+        padding: 2%;
+        gap: 1rem;
+    }
+    .menu-box{
+        /* border: 1px solid rgb(97, 97, 97); */
+        box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0.5rem;
+        border-radius: 10px;
+        height: 100px;
+        width: 100px;
+    }
+    .font_p{
+        font-size: 12px;
+    }
+    .font_pp{
+        font-size: 10px;
+    }
+    .slide_show{
+        height: 200px;
+    }
+    .menu-box .card-text{
+        font-size: 16px;
+    }
+    .pic-box{
+        overflow: hidden;
+        border-radius: 10px;
+        height: 100px;
+        width:150px;
+    }
+}
